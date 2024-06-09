@@ -1,0 +1,16 @@
+len=[]
+a=input("size: ")
+print(a)
+temp=0
+for i in range(0,n):
+    j=int(input())
+    len.append(j)
+print(len)
+for n in range(0,a):
+    for m in range(n+1,a):
+        if(len[n]>len[m]):
+            temp=len[m]
+            len[m]=len[n]
+            len[n]=temp
+print("smallest number: ",len[0])
+print("Largest number: ",len[a-1])

@@ -1,0 +1,5 @@
+size=input("Enter: ")
+array=input("Enter: ")
+print(array)
+
+

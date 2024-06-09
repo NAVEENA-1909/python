@@ -1,0 +1,16 @@
+len=[]
+h=[]
+n=int(input())
+for i in range(0,n):
+    j=int(input())
+    len.append(j)
+print(len)
+for k in range(0,n):
+    for m in range(k+1,n):
+        if(len[k]==len[m]):
+            len[m]='a'
+print("Unique elements in the array:",end=" ")
+for p in range(0,n):
+    if(len[p]!='a'):
+        h.append(len[p])
+print(h)

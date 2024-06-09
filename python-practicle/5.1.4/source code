@@ -1,0 +1,25 @@
+len=
+a=int)input("size: ")
+print(a)
+ch=int(input("Enter choice:\n1.Insert\n2,Delete\n3.Exit\n"))
+print(ch)
+for i in range(0,a):
+    j=int(input())
+    len.append(j)
+print(len)
+if(ch==1):
+    lo=int(input("Enter location: "))
+    print(lo)
+    ele=int(input("Enter element to insert: "))
+    print(ele)
+    len.insert(lo,ele)
+    print(ele,"inserted at",lo)
+    print(len)
+elif(ch==2):
+    l=int(input("Enter location: "))
+    print(l)
+    print(len[l],"deleted from index",l)
+    len.pop(l)
+    print(len)
+else:
+    print("Existing")
